@@ -6,11 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node backend/server",
-    "server": "nodemon backend/server",
+    "server": "nodemon backend/server --ignore'./frontend/' ",
     "client": "npm start --prefix frontend",
     "both": "concurrently \"npm run server\" \"npm run client\"",
     "data:import": "nodemon backend/seeder",
-    "data:destroy": "node backend/seeder -d"
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "Aditya Khare",
   "license": "MIT",
@@ -20,7 +21,12 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-async-handler": "^1.1.4",
-    "mongoose": "^5.13.2"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.6.3",
+    "nodemailer-sendgrid-transport": "^0.2.0"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",
