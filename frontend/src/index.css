@@ -59,9 +59,15 @@ h2 {
 .carousel a {
   margin: 0 auto;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 520px) {
   .img-fluid {
     max-width: 70%;
     padding-right: 15px;
+  }
+  .carousel img {
+    margin: 40px 40px 40px 15%;
+  }
+  .carousel-caption h2 {
+    font-size: 1rem;
   }
 }
