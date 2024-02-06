@@ -1,0 +1,73 @@
+main {
+  min-height: 80vh;
+}
+h3 {
+  margin: 1rem 0;
+}
+.rating span {
+  margin: 0.1rem;
+}
+.qty_design {
+  width: inherit;
+  background-color: aliceblue;
+  text-align: center;
+  height: 2rem;
+}
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+.qty_design_cart {
+  background-color: rgb(245, 240, 240);
+  width: 6rem;
+  height: 2rem;
+  border: none;
+}
+
+.checkStyle {
+  color: green !important;
+  font-weight: bolder !important;
+  font-size: larger !important;
+}
+.designCheckout {
+  display: block !important;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item-active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+.carousel-caption h2 {
+  color: bisque;
+}
+.carousel img {
+  height: 380px;
+  padding: 30px;
+  margin: 40px;
+  margin-left: 33%;
+  border-radius: 50%;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media screen and (max-width: 520px) {
+  .img-fluid {
+    max-width: 70%;
+    padding-right: 15px;
+  }
+  .carousel img {
+    margin: 40px 40px 40px 15%;
+  }
+  .carousel-caption h2 {
+    font-size: 1rem;
+  }
+}
